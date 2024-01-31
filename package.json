@@ -14,7 +14,8 @@
     "build": "neutrino build --inspect --mode production",
     "start": "neutrino start --inspect --mode development",
     "lint": "neutrino lint",
-    "test": "neutrino test"
+    "test": "neutrino test",
+    "dev": "node -r esm ./node_modules/neutrino/bin/neutrino.js start --inspect --mode development & npm run rollup"
   },
   "exports": {
     "./utils/": "./utils/",
@@ -30,8 +31,8 @@
   "author": "Foxy20122012",
   "license": "ISC",
   "dependencies": {
-    "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^2.1.1",
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
     "alasql": "^4.2.6",
     "axios": "^1.6.7",
     "base64-to-uint8array": "^1.0.0",
@@ -46,7 +47,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.3",
-    "react-icons": "^5.0.1",
+    "react-icons": "^4.7.1",
     "react-iframe": "^1.8.5",
     "react-imask": "^7.3.0",
     "react-leaflet": "^4.2.1",
@@ -75,6 +76,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "autoprefixer": "^10.4.17",
     "neutrino": "^9.5.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.33",
     "rollup": "^4.9.6",
     "rollup-plugin-dts": "^6.1.0",
