@@ -31,7 +31,7 @@ export default [
   {
     input: 'src/components/Paginator/Paginator.jsx',
     output: {
-      dir: 'dist/Paginator/index.js',
+      file: 'dist/Paginator/index.js',
       format: 'es',
     },
     external: [
@@ -46,7 +46,7 @@ export default [
   {
     input: 'src/components/DataTable/DataTable.jsx',
     output: {
-      dir: 'dist/DataTable/index.js',
+      file: 'dist/DataTable/index.js',
       format: 'es',
     },
     external: [
