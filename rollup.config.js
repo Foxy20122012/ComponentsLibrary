@@ -4,13 +4,13 @@ import tailwind from 'rollup-plugin-tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 export default {
-  input: 'src/components/Button/Button.jsx', // Ruta correcta al punto de entrada de tu aplicación
+  input: 'src/components/Button/Button.jsx',
   output: {
-    file: 'dist/button/index.js', // Ruta y nombre del archivo de salida
-    format: 'es', // O el formato que prefieras (es, cjs, umd, etc.)
+    file: 'dist/button/index.js',
+    format: 'es', // Asegúrate de que el formato sea 'es'
   },
   plugins: [
-    babel({ babelHelpers: 'runtime', plugins: ['@babel/plugin-transform-runtime'] }),
+    babel({ babelHelpers: 'runtime', plugins: ['@babel/plugin-transform-runtime'], presets: [['@babel/preset-env', { modules: false }]] }),
     postcss({ plugins: [autoprefixer()], sourceMap: true, extract: true, minimize: true }),
     tailwind({ input: './styles/globals.css', purge: false }),
   ],
@@ -18,6 +18,6 @@ export default {
     /@babel\/runtime/,
     'react',
     'prop-types',
-    // Agrega otras dependencias externas aquí si es necesario
+    // ... otras dependencias externas
   ],
 };

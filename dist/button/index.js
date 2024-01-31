@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({
-  children,
-  className,
-  onClick,
-  disabled
-}) => {
+var Button = function Button(_ref) {
+  var children = _ref.children,
+    className = _ref.className,
+    onClick = _ref.onClick,
+    disabled = _ref.disabled;
   // Aplicar estilos adicionales al botón
-  const buttonStyles = `bg-blue-500 text-white px-4 py-2 rounded ${className || ""}`;
+  var buttonStyles = "bg-blue-500 text-white px-4 py-2 rounded ".concat(className || "");
   return /*#__PURE__*/React.createElement("button", {
     className: buttonStyles,
     onClick: onClick,
