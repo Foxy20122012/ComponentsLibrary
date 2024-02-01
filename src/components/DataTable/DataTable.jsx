@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 // import Paginator from '../Paginator/Paginator'
 import Paginator from "../Paginator/Paginator.jsx"
-import { PencilSquareIcon, TrashIcon, MagnifyingGlassIcon, DocumentPlusIcon, BackspaceIcon, ArrowLongUpIcon, ArrowLongDownIcon } from '@heroicons/react/24/solid'
-import * as HeroIcons from '@heroicons/react/24/outline/'
+import { PencilSquareIcon, TrashIcon, MagnifyingGlassIcon, DocumentPlusIcon, BackspaceIcon, ArrowLongUpIcon, ArrowLongDownIcon, RowItem } from '@heroicons/react/24/solid'
+// import * as HeroIcons from '@heroicons/react/24/outline/'
 import * as iconsMd from 'react-icons/md'
 import functions from 'v-functions'
 import { groupBy, countBy } from 'underscore'

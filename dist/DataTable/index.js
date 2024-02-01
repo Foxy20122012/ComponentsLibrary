@@ -5,7 +5,6 @@ import _slicedToArray from '@babel/runtime/helpers/slicedToArray';
 import React, { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon, BackspaceIcon, MagnifyingGlassIcon, DocumentPlusIcon, ArrowLongUpIcon, ArrowLongDownIcon, PencilSquareIcon, TrashIcon } from '@heroicons/react/24/solid';
 import PropTypes from 'prop-types';
-import * as HeroIcons from '@heroicons/react/24/outline/';
 import * as iconsMd from 'react-icons/md';
 import functions from 'v-functions';
 import { groupBy, countBy } from 'underscore';
