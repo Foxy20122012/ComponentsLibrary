@@ -44,6 +44,36 @@ export default [
     ...commonConfig,
   },
   {
+    input: 'src/components/Cards/FlexiTileCard/FlexiTileCard.jsx',
+    output: {
+      file: 'dist/Cards/FlexiTileCars/index.js',
+      format: 'es',
+    },
+    external: [
+      /@babel\/runtime/,
+      'react',
+      'prop-types',
+      '@heroicons/react/24/solid',
+      '@heroicons/react/24/outline',
+    ],
+    ...commonConfig,
+  },
+  {
+    input: 'src/components/ContactForms/ContactForms.jsx',
+    output: {
+      file: 'dist/ContactForms/indes.js',
+      format: 'es',
+    },
+    external: [
+      /@babel\/runtime/,
+      'react',
+      'prop-types',
+      '@heroicons/react/24/solid',
+      '@heroicons/react/24/outline',
+    ],
+    ...commonConfig,
+  },
+  {
     input: 'src/components/DataTable/DataTable.jsx',
     output: {
       file: 'dist/DataTable/index.js',
