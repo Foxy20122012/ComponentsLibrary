@@ -382,3 +382,27 @@ div.banda-horizontal:hover div.ly-etiqueta span {
     }
   }
   
+
+
+  .titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .titulo-text {
+    color: #050609;
+    font-size: 1.5rem;
+    font-weight: medium;
+  }
+  
+  .titulo-divider {
+    background-color: #3182ce; /* Puedes cambiar el color a tu preferencia */
+    height: 2px;
+    width: 3rem;
+    margin-top: 0.5rem;
+  }
+  
