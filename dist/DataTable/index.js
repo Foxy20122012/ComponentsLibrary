@@ -189,7 +189,7 @@ function Paginator(_ref) {
     className: "flex px-4 py-2 font-semibold tracking-wide border-t w-full items-center justify-between flex-wrap border rounded-bl-lg rounded-br-lg bg-white"
   }, /*#__PURE__*/React.createElement("div", {
     className: " sm:flex items-center pr-4  hidden  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader$1, " ")
-  }, i18n.t('dataIterator.pageText', {
+  }, i18n.t('page', {
     0: initialIndex,
     1: finalIndex,
     2: totalItems
@@ -199,7 +199,7 @@ function Paginator(_ref) {
     className: "flex items-center "
   }, /*#__PURE__*/React.createElement("div", {
     className: "sm:flex hidden pr-2  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader$1, " ")
-  }, textRowsPerPage !== null && textRowsPerPage !== void 0 ? textRowsPerPage : i18n.t('dataIterator.roswPerPageText')), /*#__PURE__*/React.createElement("select", {
+  }, textRowsPerPage !== null && textRowsPerPage !== void 0 ? textRowsPerPage : i18n.t('Page')), /*#__PURE__*/React.createElement("select", {
     value: _selectedRowsPerPage,
     className: "block w-16 p-0 m-0 pr-8 text-sm form-select focus:outline-none focus:shadow-outline-purple rounded-md ring-1 text-right ",
     onChange: function onChange(e) {
@@ -218,7 +218,7 @@ function Paginator(_ref) {
   }, /*#__PURE__*/React.createElement("ul", {
     className: "inline-flex items-center"
   }, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("button", {
-    title: i18n.t('dataIterator.prevPage'),
+    title: i18n.t('prevPage'),
     onClick: function onClick() {
       return changePage('<');
     },
@@ -242,14 +242,14 @@ function Paginator(_ref) {
     onClick: function onClick() {
       return changePage('>');
     },
-    title: i18n.t('dataIterator.nextPage'),
+    title: i18n.t('nextPage'),
     className: "px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple",
     "aria-label": "Next"
   }, /*#__PURE__*/React.createElement(ChevronRightIcon, {
     className: "w-5 h-5"
   }))))))), /*#__PURE__*/React.createElement("div", {
     className: " flex items-center pr-4 sm:hidden pt-2  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader$1, " ")
-  }, i18n.t('dataIterator.pageText', {
+  }, i18n.t('page', {
     0: initialIndex,
     1: finalIndex,
     2: totalItems
@@ -1079,7 +1079,7 @@ function DataTable(_ref) {
         className: " flex w-full space-x-4 justify-center scale-150 "
       }, PrependActionButtons ? PrependActionButtons(item) : '', showEditButton === true && /*#__PURE__*/React.createElement("button", {
         className: "rounded-sm hover:bg-blue-300",
-        title: i18n.t('common.editRow'),
+        title: i18n.t('editRow'),
         onClick: function onClick() {
           return onEditItem(item);
         }
@@ -1087,7 +1087,7 @@ function DataTable(_ref) {
         className: "h-5 w-5 m-0 p-0 mr-2 ml-2 text-sky-700"
       })), showDeleteButton === true && /*#__PURE__*/React.createElement("button", {
         className: "rounded-sm hover:bg-red-300",
-        title: i18n.t('common.deleteRow'),
+        title: i18n.t('deleteRow'),
         onClick: function onClick() {
           return onDeleteItem(item);
         }
@@ -1126,7 +1126,7 @@ function DataTable(_ref) {
       className: "inline w-24 m-0 p-0"
     }, showEditButton === true && /*#__PURE__*/React.createElement("button", {
       className: "rounded-sm hover:bg-blue-300",
-      title: i18n.t('common.editRow'),
+      title: i18n.t('editRow'),
       onClick: function onClick() {
         return onEditItem(item);
       }
@@ -1134,7 +1134,7 @@ function DataTable(_ref) {
       className: "h-5 w-5 m-0 p-0 mr-2 ml-2 text-sky-700"
     })), showDeleteButton === true && /*#__PURE__*/React.createElement("button", {
       className: "rounded-sm hover:bg-red-300",
-      title: i18n.t('common.deleteRow'),
+      title: i18n.t('deleteRow'),
       onClick: function onClick() {
         return onDeleteItem(item);
       }
@@ -1258,7 +1258,7 @@ function DataTable(_ref) {
     }
   }, /*#__PURE__*/React.createElement(DocumentPlusIcon, {
     className: "mr-2 -ml-1 w-5 h-5"
-  }), i18n.t('common.newItem'))), /*#__PURE__*/React.createElement("div", {
+  }), i18n.t('newItem'))), /*#__PURE__*/React.createElement("div", {
     className: " ".concat(useOverflow ? 'overflow-auto' : '', " rounded-lg shadow ")
   }, isMobile !== true && /*#__PURE__*/React.createElement("table", {
     className: "table table-fixed w-[800px] md:w-full bg-slate-50"

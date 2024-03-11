@@ -230,7 +230,7 @@ function Paginator(_ref) {
     className: "flex px-4 py-2 font-semibold tracking-wide border-t w-full items-center justify-between flex-wrap border rounded-bl-lg rounded-br-lg bg-white"
   }, /*#__PURE__*/React__default.createElement("div", {
     className: " sm:flex items-center pr-4  hidden  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader, " ")
-  }, i18n.t('dataIterator.pageText', {
+  }, i18n.t('page', {
     0: initialIndex,
     1: finalIndex,
     2: totalItems
@@ -240,7 +240,7 @@ function Paginator(_ref) {
     className: "flex items-center "
   }, /*#__PURE__*/React__default.createElement("div", {
     className: "sm:flex hidden pr-2  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader, " ")
-  }, textRowsPerPage !== null && textRowsPerPage !== void 0 ? textRowsPerPage : i18n.t('dataIterator.roswPerPageText')), /*#__PURE__*/React__default.createElement("select", {
+  }, textRowsPerPage !== null && textRowsPerPage !== void 0 ? textRowsPerPage : i18n.t('Page')), /*#__PURE__*/React__default.createElement("select", {
     value: _selectedRowsPerPage,
     className: "block w-16 p-0 m-0 pr-8 text-sm form-select focus:outline-none focus:shadow-outline-purple rounded-md ring-1 text-right ",
     onChange: function onChange(e) {
@@ -259,7 +259,7 @@ function Paginator(_ref) {
   }, /*#__PURE__*/React__default.createElement("ul", {
     className: "inline-flex items-center"
   }, /*#__PURE__*/React__default.createElement("li", null, /*#__PURE__*/React__default.createElement("button", {
-    title: i18n.t('dataIterator.prevPage'),
+    title: i18n.t('prevPage'),
     onClick: function onClick() {
       return changePage('<');
     },
@@ -283,14 +283,14 @@ function Paginator(_ref) {
     onClick: function onClick() {
       return changePage('>');
     },
-    title: i18n.t('dataIterator.nextPage'),
+    title: i18n.t('nextPage'),
     className: "px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple",
     "aria-label": "Next"
   }, /*#__PURE__*/React__default.createElement(ChevronRightIcon$1, {
     className: "w-5 h-5"
   }))))))), /*#__PURE__*/React__default.createElement("div", {
     className: " flex items-center pr-4 sm:hidden pt-2  ".concat(fontClassHeader !== null && fontClassHeader !== void 0 ? fontClassHeader : fsHeader, " ")
-  }, i18n.t('dataIterator.pageText', {
+  }, i18n.t('page', {
     0: initialIndex,
     1: finalIndex,
     2: totalItems

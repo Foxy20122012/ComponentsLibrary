@@ -670,11 +670,11 @@ export default function DataTable ({ fontClassHeader, fontClassCelda, headers, i
                           {/* <PrependActionButtons /> */}
                           {PrependActionButtons ? PrependActionButtons(item) : ''}
                           {showEditButton === true &&
-                            <button className='rounded-sm hover:bg-blue-300' title={i18n.t('common.editRow')} onClick={() => onEditItem(item)}>
+                            <button className='rounded-sm hover:bg-blue-300' title={i18n.t('editRow')} onClick={() => onEditItem(item)}>
                               <PencilSquareIcon className='h-5 w-5 m-0 p-0 mr-2 ml-2 text-sky-700' />
                             </button>}
                           {showDeleteButton === true &&
-                            <button className='rounded-sm hover:bg-red-300' title={i18n.t('common.deleteRow')} onClick={() => onDeleteItem(item)}>
+                            <button className='rounded-sm hover:bg-red-300' title={i18n.t('deleteRow')} onClick={() => onDeleteItem(item)}>
                               <TrashIcon className='h-5 w-5 m-0 p-0 mr-2 ml-2 text-rose-700' />
                             </button>}
                         </div>}
@@ -721,11 +721,11 @@ export default function DataTable ({ fontClassHeader, fontClassCelda, headers, i
             {PrependActionButtons ? PrependActionButtons(item) : ''}
             <div className="inline w-24 m-0 p-0">
               {showEditButton === true &&
-                <button className='rounded-sm hover:bg-blue-300' title={i18n.t('common.editRow')} onClick={() => onEditItem(item)}>
+                <button className='rounded-sm hover:bg-blue-300' title={i18n.t('editRow')} onClick={() => onEditItem(item)}>
                   <PencilSquareIcon className='h-5 w-5 m-0 p-0 mr-2 ml-2 text-sky-700' />
                 </button>}
               {showDeleteButton === true &&
-                <button className='rounded-sm hover:bg-red-300' title={i18n.t('common.deleteRow')} onClick={() => onDeleteItem(item)}>
+                <button className='rounded-sm hover:bg-red-300' title={i18n.t('deleteRow')} onClick={() => onDeleteItem(item)}>
                   <TrashIcon className='h-5 w-5 m-0 p-0 mr-2 ml-2 text-rose-700' />
                 </button>}
             </div>
@@ -842,7 +842,7 @@ export default function DataTable ({ fontClassHeader, fontClassCelda, headers, i
               onClick={() => onNewItem()}
             >
               <DocumentPlusIcon className='mr-2 -ml-1 w-5 h-5' />
-              {i18n.t('common.newItem')}
+              {i18n.t('newItem')}
             </button>}
         </div>
       }
