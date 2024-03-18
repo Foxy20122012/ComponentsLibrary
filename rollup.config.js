@@ -27,7 +27,7 @@ export default [
       format: 'es',
     },
     ...commonConfig,
-  },  
+  },
   {
     input: 'src/components/Paginator/Paginator.jsx',
     output: {
@@ -59,18 +59,28 @@ export default [
     ...commonConfig,
   },
   {
-    input: 'src/components/Cards/FlexiTileCard/FlexiTileCard.jsx',
+    input: 'src/components/Sidebar/Sidebar.jsx',
     output: {
-      file: 'dist/Cards/FlexiTileCars/index.js',
+      file: 'dist/Sidebar/index.js',
       format: 'es',
     },
     external: [
       /@babel\/runtime/,
       'react',
       'prop-types',
+      '@js-mq',
       '@heroicons/react/24/solid',
       '@heroicons/react/24/outline',
     ],
+    ...commonConfig,
+  },
+  {
+    input: 'src/components/Cards/FlexiTileCard/FlexiTileCard.jsx',
+    output: {
+      file: 'dist/Cards/FlexiTileCars/index.js',
+      format: 'es',
+    },
+    external: [/@babel\/runtime/, 'react', 'prop-types', '@heroicons/react/20/solid', 'react-icons/fc', 'js-mq', '@heroicons/react/24/solid', 'react-icons/md'],
     ...commonConfig,
   },
   {
